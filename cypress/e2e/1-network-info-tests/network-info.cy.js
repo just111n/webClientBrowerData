@@ -3,6 +3,4 @@ describe('Network Info Tracker', () => {
     cy.visit('/'); // Replace with your local dev URL
     cy.contains('Network Information Tracker');
   });
-
-  
 });
