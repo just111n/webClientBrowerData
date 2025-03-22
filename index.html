@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -65,9 +65,7 @@
       <!-- Card: Speed Test Results (Ping, Download, Upload) -->
       <div class="card" id="speedCard">
         <h2>Connection Speed</h2>
-        <div class="info-row">
-          <label>Ping:</label> <span class="value" id="ping">-- ms</span>
-        </div>
+        <div class="info-row"><label>Ping:</label> <span class="value" id="ping">-- ms</span></div>
         <div class="info-row">
           <label>Download:</label>
           <span class="value" id="downloadSpeed">-- Mbps</span>
@@ -79,8 +77,7 @@
         <!-- A button to manually re-run the speed test, since continuous testing can be heavy -->
         <button id="speedTestBtn">Test Speed Now</button>
         <p class="small-note">
-          *Speed test downloads a sample file to estimate speed. Results may
-          vary.
+          *Speed test downloads a sample file to estimate speed. Results may vary.
         </p>
       </div>
 
@@ -107,14 +104,13 @@
           <!-- Past records will be appended here -->
         </ul>
         <p class="small-note">
-          *This list shows past network data (IP, network type) stored locally
-          for comparison.
+          *This list shows past network data (IP, network type) stored locally for comparison.
         </p>
       </div>
     </div>
 
     <!-- JavaScript placed at end of body for better performance -->
-    
+
     <script src="app.js"></script>
   </body>
 </html>

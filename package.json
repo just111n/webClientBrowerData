@@ -6,7 +6,9 @@
   "scripts": {
     "start": "dotenv -e .env lite-server -c bs-config.js",
     "cy:run": "cypress run",
-    "test": "start-server-and-test start http://localhost:3000 cy:run"
+    "test": "start-server-and-test start http://localhost:3000 cy:run",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "Justin Looi",
@@ -14,7 +16,9 @@
   "devDependencies": {
     "cypress": "^14.2.0",
     "dotenv-cli": "^8.0.0",
+    "eslint": "^9.23.0",
     "lite-server": "^2.6.1",
+    "prettier": "^3.5.3",
     "start-server-and-test": "^2.0.11"
   }
 }
