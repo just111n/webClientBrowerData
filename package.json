@@ -4,12 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "dotenv -e .env lite-server -c bs-config.js",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justin Looi",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.2.0"
+    "cypress": "^14.2.0",
+    "dotenv-cli": "^8.0.0",
+    "lite-server": "^2.6.1",
+    "start-server-and-test": "^2.0.11"
   }
 }
