@@ -26,5 +26,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run Lint Check
+        run: npm run lint
+
       - name: Run Cypress Tests
         run: npm run test
